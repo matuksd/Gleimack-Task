@@ -1,0 +1,167 @@
+@charset "UTF-8";
+.text-arrivals {
+  font-size: 36px;
+  margin-bottom: 90px;
+}
+
+.blume-box {
+  border-radius: 25px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+.checkbox:checked {
+  border-width: 5px !important;
+  border-color: black !important;
+}
+
+.flower-page {
+  border-radius: 25px 0px 0px 25px;
+  box-shadow: 1px 4px 40px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flower-page .empty-space {
+  height: 100px;
+}
+.flower-page .empty-space.large {
+  height: 200px;
+}
+.flower-page .slider input {
+  border: 0 !important;
+  background: transparent !important;
+  position: absolute !important;
+  top: 30px !important;
+  pointer-events: none;
+}
+.flower-page .sort-price {
+  cursor: pointer;
+}
+.flower-page .categories .text-toogle[aria-expanded=false]::after {
+  content: "∧";
+}
+.flower-page .categories .text-toogle[aria-expanded=true]:after {
+  content: "∨";
+}
+.flower-page .flower-box {
+  border-radius: 25px;
+}
+.flower-page .flower-box img {
+  height: 250px;
+  width: 200px;
+}
+.flower-page .flower-box .flower-details {
+  border-left: 6px solid white;
+  height: auto;
+  margin-top: 25px;
+  margin-left: -22px;
+}
+.flower-page .flower-box .flower-details.grun {
+  border-left-color: grey;
+}
+.flower-page .flower-box .flower-details.weiss {
+  border-left-color: wheat;
+}
+.flower-page .flower-box .flower-details.pastell.bunt {
+  border-left-color: brown;
+}
+.flower-page .flower-box .flower-details.china.red {
+  border-left-color: red;
+}
+.flower-page .flower-box .flower-details.violett {
+  border-left-color: violet;
+}
+.flower-page .flower-box .flower-details.blau {
+  border-left-color: blue;
+}
+.flower-page .flower-box .flower-details.rosa {
+  border-left-color: black;
+}
+.flower-page .flower-box .flower-details.natur {
+  border-left-color: lightgreen;
+}
+.flower-page .flower-box .flower-details.gebleicht {
+  border-left-color: black;
+}
+.flower-page .flower-box .flower-details .flower-type {
+  color: gray;
+  font-size: 24px;
+  margin-left: 4px;
+}
+.flower-page .flower-box .flower-details .flower-name {
+  font-size: 30px;
+}
+
+.price-tag {
+  color: #d1d1d4;
+  font-size: 14px;
+}
+
+.flower-price {
+  font-size: 24px;
+}
+
+.slider-handle {
+  background-color: black !important;
+  border-radius: 25px !important;
+}
+.slider-handle #first-value {
+  border: 0 !important;
+  background: transparent !important;
+  position: absolute !important;
+  top: 30px !important;
+}
+
+.slider-fill {
+  background-color: black !important;
+}
+
+.graph {
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+.graph .bar {
+  padding-right: 6%;
+  margin-left: 4%;
+  background-color: gray;
+  display: inline-block;
+}
+.graph .bar.size-0 {
+  height: 0%;
+}
+.graph .bar.size-1 {
+  height: 10%;
+}
+.graph .bar.size-2 {
+  height: 20%;
+}
+.graph .bar.size-3 {
+  height: 30%;
+}
+.graph .bar.size-4 {
+  height: 40%;
+}
+.graph .bar.size-5 {
+  height: 50%;
+}
+.graph .bar.size-6 {
+  height: 60%;
+}
+.graph .bar.size-7 {
+  height: 70%;
+}
+.graph .bar.size-8 {
+  height: 80%;
+}
+.graph .bar.size-9 {
+  height: 90%;
+}
+.graph .bar.size-max {
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */

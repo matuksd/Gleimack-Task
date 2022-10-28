@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
+        <meta charset="utf-8" />
+        <title></title>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/js/foundation.min.js" integrity="sha256-WUKHnLrIrx8dew//IpSEmPN/NT3DGAEmIePQYIEJLLs= sha384-53StQWuVbn6figscdDC3xV00aYCPEz3srBdV/QGSXw3f19og3Tq2wTRe0vJqRTEO sha512-X9O+2f1ty1rzBJOC8AXBnuNUdyJg0m8xMKmbt9I3Vu/UOWmSg5zG+dtnje4wAZrKtkopz/PEDClHZ1LXx5IeOw==" crossorigin="anonymous"></script>
+    </head>
+    <body>  
+        <div class="row mt-4  ml-3 g-0 mr-0 bg-white border flower-page">
+            <div class="col-12">
+                <h1 class="mb-3 ml-3 my-3">Blume</h1>
+            </div>
+            <div class="row">
+                <div class="col-3 border-bottom border-right border-top px-0">
+                    <div class="empty-space border-bottom">
+                    </div>
+                    
+                    <div class="categories border-bottom my-3">
+                        <div class="mx-4 mb-4">
+                            <span class="font-weight-bold">Categories</span>
+                            <span data-toggle="collapse" class="float-right text-toogle font-weight-bold" href="#categories-list" id="toogle-categories" role="button" aria-expanded="true" aria-controls="collapseExample">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="display-inline border-bottom ml-4 collapse show" id="categories-list">
+                        <div>
+                            <input type="checkbox" class="checkbox border m-0" id="blume" name="Blume" onchange="filterList()" checked>
+                            <label for="Blume" class="my-2 ml-2 font-weight-bold">Blume</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="checkbox border m-0" id="scales" name="basis" onchange="filterList()" checked>
+                            <label for="basis" class="mb-2 ml-2 font-weight-bold">basis</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="checkbox border m-0" id="ovales-gras" name="Ovales Gras" onchange="filterList()" checked>
+                            <label for="Ovales Gras" class="mb-2 ml-2  font-weight-bold">Ovales Gras</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="checkbox border m-0" id="winziges-extra" name="Winziges Extra" onchange="filterList()" checked>
+                            <label for="Winziges Extra" class="mb-2 ml-2 font-weight-bold">Winziges Extra</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="checkbox border m-0" id="langes-gras" name="Langes Gras" onchange="filterList()" checked>
+                            <label for="Langes Gras" class="mb-2 ml-2  font-weight-bold">Langes Gras</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="checkbox border m-0" id="glatt" name="glatt" onchange="filterList()" checked>
+                            <label for="glatt" class="mb-2 ml-2 font-weight-bold">glatt</label>
+                        </div>
+                    </div>
+
+                    <div class="price-slider border-bottom py-3">
+                        <div class="mx-4">
+                            <p class="font-weight-bold mb-5">Price range</p>
+                            <div class="graph">
+                            </div>
+                            <div class="slider mt-0" data-slider data-initial-start = "0" data-initial-end = "10" data-end="10">
+                                <span class = "slider-handle" data-slider-handle role="slider" tabindex = "1" onmousemove="filterList()">
+                                    <input id="first-value">
+                                </span>
+                                <span class = "slider-fill" data-slider-fill>
+                                </span>
+                                <span class = "slider-handle" data-slider-handle role = "slider" tabindex = "1" onmousemove="filterList()">
+                                    <input id="second-value">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="empty-space large border-bottom">
+                    </div>
+                </div>
+
+                <div class="col-9 pl-5 border-top">
+                    <div clas="row">
+                        <div class="col-11 my-5 font-weight-bold">
+                            <span class="text-arrivals ml-4">New Arrivals</span>
+
+                            <span class="float-right sort-price" onclick="sortList()">
+                                Sort by price
+                                <span class="price-symbol">
+
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="flower-list row">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

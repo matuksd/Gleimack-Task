@@ -1,0 +1,204 @@
+﻿.text-arrivals {
+    font-size: 36px;
+    margin-bottom: 90px;
+}
+
+.blume-box {
+    border-radius: 25px;
+}
+
+.checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+}
+
+.checkbox:checked {
+    border-width: 5px !important;
+    border-color: black !important;
+}
+
+.flower-page {
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 1px 4px 40px 8px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+    .empty-space {
+        height: 100px;
+
+        &.large {
+            height: 200px;
+        }
+    }
+
+    .slider {
+        input {
+            border: 0 !important;
+            background: transparent !important;
+            position: absolute !important;
+            top: 30px !important;
+            pointer-events: none;
+        }
+    }
+
+    .sort-price {
+        cursor: pointer;
+    }
+
+    .categories {
+        .text-toogle[aria-expanded=false]::after {
+            content: "∧";
+          }
+        .text-toogle[aria-expanded=true]:after {
+            content: "∨";
+        }
+    }
+
+    .flower-box {
+        border-radius: 25px;
+
+        img {
+            height: 250px;
+            width: 200px;
+        }
+
+        .flower-details {
+            border-left: 6px solid white;
+            height: auto;
+            margin-top: 25px;
+            margin-left: -22px;
+
+            &.grun {
+                border-left-color: grey;
+            }
+
+            &.weiss {
+                border-left-color: wheat;
+            }
+
+            &.pastell {
+                &.bunt {
+                    border-left-color: brown;
+                }
+            }
+
+            &.china {
+                &.red {
+                    border-left-color: red;
+                }
+            }
+
+            &.violett {
+                border-left-color: violet;
+            }
+
+            &.blau {
+                border-left-color: blue;
+            }
+
+            &.rosa {
+                border-left-color: black;
+            }
+
+            &.natur {
+                border-left-color: lightgreen;
+            }
+
+            &.gebleicht {
+                border-left-color: black;
+            }
+
+            .flower-type {
+                color: gray;
+                font-size: 24px;
+                margin-left: 4px;
+            }
+
+            .flower-name {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.price-tag {
+    color: #d1d1d4;
+    font-size: 14px;
+}
+
+.flower-price {
+    font-size: 24px;
+}
+
+.slider-handle {
+    background-color: black !important;
+    border-radius: 25px !important;
+
+    #first-value  {
+        border: 0 !important;
+        background: transparent !important;
+        position: absolute !important;
+        top: 30px !important;
+    }
+}
+
+.slider-fill {
+    background-color: black !important;
+}
+
+.graph {
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+
+    .bar {
+        padding-right: 6%;
+        margin-left: 4%;
+        background-color: gray;
+        display: inline-block;
+
+        &.size-0 {
+            height: 0%;
+        }
+
+        &.size-1 {
+            height: 10%;
+        }
+
+        &.size-2 {
+            height: 20%;
+        }
+
+        &.size-3 {
+            height: 30%;
+        }
+
+        &.size-4 {
+            height: 40%;
+        }
+
+        &.size-5 {
+            height: 50%;
+        }
+
+        &.size-6 {
+            height: 60%;
+        }
+
+        &.size-7 {
+            height: 70%;
+        }
+
+        &.size-8 {
+            height: 80%;
+        }
+
+        &.size-9 {
+            height: 90%;
+        }
+
+        &.size-max {
+            height: 100%;
+        }
+    }
+}
