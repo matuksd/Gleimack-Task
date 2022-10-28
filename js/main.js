@@ -1,4 +1,5 @@
 ﻿const api_url = 'https://blumlinge2.herokuapp.com/api/smallbouquet/?format=json';
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
 let data = {};
 let filteredData = {};
@@ -8,7 +9,8 @@ let sortedList = true;
 let graphData = [0,0,0,0,0,0,0,0,0,0];
 
 async function init() {
-    const response = await fetch(api_url);
+    const response = await fetch(proxyurl + api_url);
+
     data = await response.json();
 
     filteredData = data;
